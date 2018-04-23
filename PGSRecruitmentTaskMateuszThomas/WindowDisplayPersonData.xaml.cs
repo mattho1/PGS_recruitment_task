@@ -40,5 +40,13 @@ namespace PGSRecruitmentTaskMateuszThomas
             firstWindow.Show();
             this.Close();
         }
+
+        /// <summary>
+        /// The function that ends the form.
+        /// </summary>
+        private void buttonEnd_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

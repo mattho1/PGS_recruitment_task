@@ -10,6 +10,7 @@
     <Grid>
         <Label x:Name="labelEnteredData" Content="Wprowadzone dane:" HorizontalAlignment="Center" Height="34" Margin="0,36,0,0" VerticalAlignment="Top" Width="165" FontSize="16" FontWeight="Bold"/>
         <TextBlock x:Name="textBlockDataAboutPerson" HorizontalAlignment="Center" Margin="0,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="150" Width="345"/>
-        <Button x:Name="buttonRestartForm" Content="Od nowa" HorizontalAlignment="Center" Height="31" Margin="0,262,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" FontSize="16" Click="buttonRestartForm_Click"/>
+        <Button x:Name="buttonRestartForm" Content="Od nowa"  HorizontalAlignment="Left" Height="31" Margin="116,262,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" FontSize="16" Click="buttonRestartForm_Click"/>
+        <Button x:Name="buttonEnd" Content="Zakończ" HorizontalAlignment="Left" Height="31" Margin="279,262,0,0" VerticalAlignment="Top" Width="125" FontSize="16" FontWeight="Bold" Click="buttonEnd_Click"/>
     </Grid>
 </Window>
