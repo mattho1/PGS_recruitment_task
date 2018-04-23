@@ -1,0 +1,27 @@
+﻿<Window x:Class="PGSRecruitmentTaskMateuszThomas.WindowFormName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PGSRecruitmentTaskMateuszThomas"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Formularz ( 1 z 5 ) " Height="350" Width="525">
+    <Grid>
+        <Label x:Name="labelName" Content="Imię:" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="300" Margin="0,80,0,207.8" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="textBoxName" FocusManager.IsFocusScope="True" HorizontalAlignment="Center" Height="28" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" FontSize="16"/>
+        <Button x:Name="buttonNext" Content="Następny" HorizontalAlignment="Left" Height="31" Margin="197,262,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" FontSize="16" Click="buttonNext_Click"/>
+        <TextBlock IsHitTestVisible="False" Text="Wpisz imię" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="3,132,0,0" Foreground="DarkGray" Width="297" FontSize="16">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=textBoxName}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</Window>
